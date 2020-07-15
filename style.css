@@ -1,18 +1,30 @@
-input[type=checkbox].css-checkbox {
-    border: none;
-    background: none;
-    position: absolute;
-    left: -9999px;
-}
-input[type=checkbox].css-checkbox + label{
-    display: inline-block;
-    padding: 0 0 0 30px;
-    height: 20px;
-    line-height: 20px;
-    background: url(bg_checkbox.png) no-repeat;
-    background-size: 20px 40px;
-    vertical-align: middle;
-}
-input[type=checkbox].css-checkbox:checked+label{
-    background-position: 0 -20px;
+ input.css-checkbox {
+     border: none;
+     background: none;
+     position: absolute;
+     left: -9999px;
+     /*            display: none;*/
+     /*            left: -10px;*/
+     display: none;
+
+ }
+
+ input.css-checkbox + label {
+     height: 20px;
+     line-height: 20px;
+     padding-left: 30px;
+     /*            border: 1px solid #f00;*/
+     background: url(bg_checkbox.png);
+     background-repeat: no-repeat;
+     background-position: 0 0;
+     background-size: 20px 40px;
+     /*         원본이미지 30*60  */
+     vertical-align: middle;
+     display: inline-block;
+     transition: all 2s;
+     /*            transition: all 2s;*/
+ }
+
+ input.css-checkbox:checked + label {
+ background-position: 0 -20px;
 }
